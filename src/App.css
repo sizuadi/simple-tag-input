@@ -1,0 +1,122 @@
+.page {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+	background: linear-gradient(155deg, #f7f3ea 0%, #e8eef7 100%);
+}
+
+.card {
+	width: min(620px, 100%);
+	padding: 24px;
+	border-radius: 16px;
+	border: 1px solid #d8d2c8;
+	background-color: #fffdf8;
+	box-shadow: 0 12px 36px rgba(43, 37, 29, 0.12);
+}
+
+.heading h1 {
+	margin: 0;
+	font-size: 1.7rem;
+	color: #2e261c;
+}
+
+.heading p {
+	margin: 8px 0 0;
+	color: #6a5c4a;
+}
+
+.tag-list {
+	margin-top: 18px;
+	min-height: 56px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
+
+.empty-state {
+	margin: 0;
+	color: #8a7a66;
+	font-style: italic;
+}
+
+.tag-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 10px;
+	border-radius: 999px;
+	background: #2f5ea9;
+	color: #ffffff;
+	font-size: 0.92rem;
+	line-height: 1;
+}
+
+.remove-button {
+	border: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 999px;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.2);
+	transition: background-color 0.2s ease;
+}
+
+.remove-button:hover {
+	background: rgba(255, 255, 255, 0.35);
+}
+
+.remove-button:focus-visible {
+	outline: 2px solid #ffffff;
+	outline-offset: 1px;
+}
+
+.input-group {
+	margin-top: 18px;
+	display: grid;
+	gap: 8px;
+}
+
+.input-label {
+	font-weight: 600;
+	color: #3c3226;
+}
+
+.tag-input {
+	border: 1px solid #bcae9d;
+	border-radius: 10px;
+	padding: 11px 12px;
+	font-size: 1rem;
+	color: #2f261c;
+	background-color: #fff;
+	transition:
+		border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.tag-input:focus {
+	outline: none;
+	border-color: #2f5ea9;
+	box-shadow: 0 0 0 3px rgba(47, 94, 169, 0.2);
+}
+
+.error {
+	margin: 12px auto 0;
+	width: min(620px, 100%);
+	color: #a9352f;
+	font-weight: 600;
+}
+
+@media (max-width: 640px) {
+	.page {
+		padding: 16px;
+	}
+
+	.card {
+		padding: 18px;
+	}
+}
